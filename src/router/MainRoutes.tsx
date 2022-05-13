@@ -1,5 +1,8 @@
 import { Route } from 'react-router-dom';
 
+// MIDDLEWARES
+import { RequireAuth } from 'src/middlewares';
+
 // LAYOUT
 // import { AuthLayout } from 'src/layouts';
 
@@ -9,7 +12,9 @@ import { Home } from 'src/pages/main';
 const MainRoutes = () => {
   return (
     <Route path="/">
-      <Route index element={<Home />}></Route>
+      <RequireAuth>
+        <Route index element={<Home />}></Route>
+      </RequireAuth>
     </Route>
   );
 };

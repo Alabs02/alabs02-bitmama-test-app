@@ -1,0 +1,40 @@
+.badge {
+  height: toRem(15);
+  width: toRem(15);
+  border-radius: 50%;
+  &-lg {
+    height: toRem(25);
+    width: toRem(25);
+  }
+  &-sm {
+    height: toRem(10);
+    width: toRem(10);
+  }
+  &-lime-green {
+    background-color: $app-lime-green;
+  }
+  &-lemon-green {
+    background-color: $app-lemon-green;
+  }
+  &-yellow {
+    background-color: $app-yellow;
+  }
+  &-amber {
+    background-color: $app-amber;
+  }
+}
+
+@include breakpoint-up(md) {
+  .badge {
+    height: toRem(20);
+    width: toRem(20);
+    &-lg {
+      height: toRem(30);
+      width: toRem(30);
+    }
+    &-sm {
+      height: toRem(15);
+      width: toRem(15);
+    }
+  }
+}

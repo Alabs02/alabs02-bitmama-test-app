@@ -1,0 +1,42 @@
+.dropdown {
+    min-width: toRem(250);
+    max-width: toRem(300);
+    min-height: auto;
+    max-height: toRem(400);
+    background: $brand-white;
+    border: toRem(1) solid $app-gray;
+    position: absolute;
+    right: toRem(40);
+    margin-top: toRem(10);
+    border-radius: toRem(10);
+    &__divider {
+        height: toRem(1);
+        background: $app-gray;
+    }
+    &__btn {
+        cursor: pointer;
+        background: $brand-primary;
+        color: $brand-white;
+        font-weight: 500;
+        font-size: toRem(17);
+        width: 100%;
+        padding: toRem(15) toRem(20);
+        border-radius: toRem(10);
+        &-icon {
+            color: $brand-white;
+        }
+    }
+    &-card {
+        padding: toRem(10);
+        border-bottom: 1px solid $app-gray;
+        &:last-child {
+            border-bottom: none;
+        }
+        &__title {
+            font-size: toRem(17);
+        }
+        &__row {
+            width: 50%;
+        }
+    }
+}

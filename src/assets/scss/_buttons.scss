@@ -1,0 +1,57 @@
+.btn {
+  &-block {
+    display: block !important;
+    width: 100% !important;
+  }
+  &-flex {
+    display: flex;
+    align-items: center;
+  }
+  &-lg {
+    padding: toRem(20) toRem(25);
+    font-size: toRem(20);
+  }
+  &-sm {
+    padding: toRem(10) toRem(20);
+  }
+  @include subpixel-antialiased();
+  padding: toRem(15) toRem(20);
+  border-radius: toRem(30);
+  font-weight: 500;
+  font-size: toRem(17);
+  letter-spacing: 0.1pt;
+  transition: all 0.4 ease-in-out;
+  &-primary {
+    background-color: $brand-primary;
+    color: $brand-white;
+    &:hover,
+    &:focus {
+      background-color: darken($color: $brand-primary, $amount: 10);
+    }
+  }
+  &-white {
+    .btn-icon {
+      color: $brand-primary;
+    }
+    background: $brand-white;
+    @include boxShadow(default, $brand-dark);
+    &:hover,
+    &:focus {
+      @include boxShadow(md, $brand-dark);
+    }
+  }
+  &-teal {
+    background-color: $brand-teal;
+  }
+  &-flat {
+    &-teal-light {
+      background: inherit;
+      color: darken($color: $brand-teal-light, $amount: 20%);
+      &:hover,
+      &:focus {
+        background: lighten($color: $brand-teal-light, $amount: 25%);
+        color: darken($color: $brand-teal-light, $amount: 30%);
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$size: 100;
+@for $n from 0 through $size {
+  .h-#{$n} {
+    height: toRem($n) !important;
+  }
+  .w-#{$n} {
+    width: toRem($n) !important;
+  }
+  .wf-#{$n} {
+    width: #{$n + '%'} !important;
+  }
+  .hf-#{$n} {
+    height: #{$n + '%'} !important;
+  }
+}
+
+@include breakpoint-up(md) {
+  @for $n from 0 through $size {
+    .h-md-#{$n} {
+      height: toRem($n) !important;
+    }
+    .w-md-#{$n} {
+      width: toRem($n) !important;
+    }
+    .wf-md-#{$n} {
+      width: #{$n + '%'} !important;
+    }
+    .hf-#{$n} {
+      height: #{$n + '%'} !important;
+    }
+  }
+}
+
+@include breakpoint-up(lg) {
+  @for $n from 0 through $size {
+    .h-lg-#{$n} {
+      height: toRem($n) !important;
+    }
+    .w-lg-#{$n} {
+      width: toRem($n) !important;
+    }
+    .wf-lg-#{$n} {
+      width: #{$n + '%'} !important;
+    }
+    .hf-#{$n} {
+      height: #{$n + '%'} !important;
+    }
+  }
+}

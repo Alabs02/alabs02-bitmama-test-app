@@ -1,0 +1,87 @@
+{
+   "env":{
+      "browser":true,
+      "es2021":true
+   },
+   "extends":[
+      "plugin:react/recommended",
+      "airbnb",
+      "prettier"
+   ],
+   "parser":"@typescript-eslint/parser",
+   "parserOptions":{
+      "ecmaFeatures":{
+         "jsx":true
+      },
+      "ecmaVersion":12,
+      "sourceType":"module"
+   },
+   "plugins":[
+      "react",
+      "@typescript-eslint",
+      "react-hooks"
+   ],
+   "rules":{
+      "no-use-before-define":"off",
+      "@typescript-eslint/no-use-before-define":[
+         "error"
+      ],
+      "react/jsx-filename-extension":[
+         "warn",
+         {
+            "extensions":[
+               ".tsx"
+            ]
+         }
+      ],
+      "import/extensions":[
+         "error",
+         "ignorePackages",
+         {
+            "ts":"never",
+            "tsx":"never"
+         }
+      ],
+      "no-shadow":"off",
+      "@typescript-eslint/no-shadow":[
+         "error"
+      ],
+      "@typescript-eslint/explicit-function-return-type":[
+         "error",
+         {
+            "allowExpressions":true
+         }
+      ],
+      "max-len":[
+         "warn",
+         {
+            "code":80
+         }
+      ],
+      "react/react-in-jsx-scope": "off",
+      "react/display-name": "off",
+      "react/prop-types": "off",
+      "no-var": 2,
+      "no-undef": 2,
+      "no-param-reassign": 2,
+      "react/destructuring-assignment": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "react/require-default-props": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "@next/next/no-img-element": "off",
+      "@typescript-eslint/comma-dangle": "off", // Avoid conflict rule between Eslint and Prettier
+      "import/prefer-default-export": "off", // Named export is easier to refactor automatically
+      "simple-import-sort/imports": "error", // Import configuration for `eslint-plugin-simple-import-sort`
+      "simple-import-sort/exports": "off", // Export configuration for `eslint-plugin-simple-import-sort`
+      "@typescript-eslint/no-unused-vars": "off",
+      "unused-imports/no-unused-imports": "off",
+      "unused-imports/no-unused-vars": "off"
+   },
+   "settings":{
+      "import/resolver":{
+         "typescript":{
+         }
+      }
+   }
+ }

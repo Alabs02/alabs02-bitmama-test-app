@@ -1,0 +1,65 @@
+.auth-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  &__body {
+    width: 100%;
+  }
+  &__content {
+    width: 100%;
+  }
+  &__media {
+    width: 100%;
+    height: 100%;
+    background: $app-gray;
+    place-items: center;
+    overflow: hidden;
+    display: none;
+    &-wrapper {
+      width: 90%;
+      height: 70%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__heading {
+    color: $brand-dark;
+  }
+  &__subheading {
+    color: $brand-dark;
+  }
+}
+
+.border {
+  &-red {
+    border: 1px solid red;
+  }
+  &-blue {
+    border: 1px solid blue;
+  }
+  &-green {
+    border: 1px solid green;
+  }
+  &-yellow {
+    border: 1px solid yellow;
+  }
+  &-purple {
+    border: 1px solid purple;
+  }
+}
+
+@include breakpoint-up(md) {
+  .auth-layout {
+    &__media {
+      display: grid;
+    }
+  }
+}

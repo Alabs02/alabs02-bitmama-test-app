@@ -1,0 +1,29 @@
+.app-bar {
+  width: 100%;
+  @include flex-center-start();
+  &__media {
+    height: toRem(50);
+    width: toRem(50);
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__title {
+    color: $app-minsk;
+    span {
+      color: $malibu;
+    }
+  }
+}
+
+@include breakpoint-up(md) {
+  .app-bar {
+    &__media {
+      height: toRem(70);
+      width: toRem(70);
+    }
+  }
+}

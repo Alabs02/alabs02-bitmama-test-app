@@ -1,0 +1,148 @@
+.grid {
+  display: grid !important;
+  &-rows-none {
+    grid-template-rows: none;
+  }
+  &-cols-none {
+    grid-template-columns: none;
+  }
+}
+
+.col {
+  &-auto {
+    grid-column: auto;
+  }
+  &-span-full {
+    grid-column: 1 / -1;
+  }
+}
+
+.row {
+  &-auto {
+    grid-row: auto;
+  }
+  &-span-full {
+    grid-row: 1 / -1;
+  }
+}
+
+.place {
+  &-items {
+    &-center {
+      place-items: center;
+    }
+    &-start {
+      place-items: start;
+    }
+    &-end {
+      place-items: end;
+    }
+    &-stretch {
+      place-items: stretch;
+    }
+    &-baseline {
+      place-items: baseline;
+    }
+    &-self-start {
+      place-self: start;
+    }
+    &-self-end {
+      place-self: end;
+    }
+    &-self-center {
+      place-self: center;
+    }
+    &-self-stretch {
+      place-self: stretch;
+    }
+    &-self-baseline {
+      place-self: baseline;
+    }
+  }
+  &-content {
+    &-center {
+      place-content: center;
+    }
+    &-start {
+      place-content: start;
+    }
+    &-end {
+      place-content: end;
+    }
+    &-stretch {
+      place-content: stretch;
+    }
+    &-around {
+      place-content: around;
+    }
+    &-between {
+      place-content: between;
+    }
+    &-evenly {
+      place-content: evenly;
+    }
+  }
+}
+
+$cols: 18;
+$rowMax: 7;
+@for $col from 1 through $cols {
+  .grid {
+    &-col-#{$col} {
+      grid-template-columns: repeat($col, minmax(0, 1fr));
+    }
+    &-rows-#{$col} {
+      grid-template-rows: repeat($col, minmax(0, 1fr));
+    }
+  }
+  .col-span-#{$col} {
+    grid-column: span $col / span $col;
+  }
+  @if ($col <=$rowMax) {
+    .row-span-#{$col} {
+      grid-row: span $col / span $col;
+    }
+  }
+}
+
+@include breakpoint-up(md) {
+  @for $col from 1 through $cols {
+    .grid {
+      &-col-md-#{$col} {
+        grid-template-columns: repeat($col, minmax(0, 1fr));
+      }
+      &-rows-md-#{$col} {
+        grid-template-rows: repeat($col, minmax(0, 1fr));
+      }
+    }
+    .col-span-md-#{$col} {
+      grid-column: span $col / span $col;
+    }
+    @if ($col <=$rowMax) {
+      .row-span-md-#{$col} {
+        grid-row: span $col / span $col;
+      }
+    }
+  }
+}
+
+@include breakpoint-up(lg) {
+  @for $col from 1 through $cols {
+    .grid {
+      &-col-lg-#{$col} {
+        grid-template-columns: repeat($col, minmax(0, 1fr));
+      }
+      &-rows-lg-#{$col} {
+        grid-template-rows: repeat($col, minmax(0, 1fr));
+      }
+    }
+    .col-span-lg-#{$col} {
+      grid-column: span $col / span $col;
+    }
+    @if ($col <=$rowMax) {
+      .row-span-lg-#{$col} {
+        grid-row: span $col / span $col;
+      }
+    }
+  }
+}

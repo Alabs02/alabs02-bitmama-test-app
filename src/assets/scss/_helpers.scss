@@ -1,0 +1,278 @@
+.hide {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text {
+  none {
+    text-transform: none !important;
+  }
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.fw {
+  &-thin {
+    font-weight: 200 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-light {
+    font-weight: 300 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-normal {
+    font-weight: 400 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-medium {
+    font-weight: 500 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-semi-bold {
+    font-weight: 600 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-bold {
+    font-weight: 700 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-bolder {
+    font-weight: 800 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  &-extra-bolder {
+    font-weight: 900 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-decoration {
+  &-underline {
+    text-decoration: underline !important;
+  }
+  &-none {
+    text-decoration: none !important;
+  }
+  &-solid {
+    text-decoration: solid !important;
+  }
+  &-line-through {
+    text-decoration: line-through !important;
+  }
+  &-dotted {
+    text-decoration: dotted !important;
+  }
+  &-double {
+    text-decoration: double !important;
+  }
+  &-wavy {
+    text-decoration: wavy !important;
+  }
+  &-primay {
+    text-decoration-color: $brand-primary;
+  }
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+@include breakpoint-up(md) {
+  .h-md-auto {
+    height: auto !important;
+  }
+  .text-md-capitalize {
+    text-transform: capitalize !important;
+  }
+  .text-md-uppercase {
+    text-transform: uppercase !important;
+  }
+  .text-decoration-md {
+    &-underline {
+      text-decoration: underline !important;
+    }
+    &-none {
+      text-decoration: none !important;
+    }
+    &-solid {
+      text-decoration: solid !important;
+    }
+    &-line-through {
+      text-decoration: line-through !important;
+    }
+    &-dotted {
+      text-decoration: dotted !important;
+    }
+    &-double {
+      text-decoration: double !important;
+    }
+    &-wavy {
+      text-decoration: wavy !important;
+    }
+    &-primay {
+      text-decoration-color: $brand-primary;
+    }
+  }
+  .fw-md {
+    &-thin {
+      font-weight: 200 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-light {
+      font-weight: 300 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-normal {
+      font-weight: 400 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-medium {
+      font-weight: 500 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-semi-bold {
+      font-weight: 600 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-bold {
+      font-weight: 700 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-bolder {
+      font-weight: 800 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-extra-bolder {
+      font-weight: 900 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+  }
+}
+
+@include breakpoint-up(lg) {
+  .text-lg-capitalize {
+    text-transform: capitalize !important;
+  }
+  .text-lg-uppercase {
+    text-transform: uppercase !important;
+  }
+  .text-decoration-lg {
+    &-underline {
+      text-decoration: underline !important;
+    }
+    &-none {
+      text-decoration: none !important;
+    }
+    &-solid {
+      text-decoration: solid !important;
+    }
+    &-line-through {
+      text-decoration: line-through !important;
+    }
+    &-dotted {
+      text-decoration: dotted !important;
+    }
+    &-double {
+      text-decoration: double !important;
+    }
+    &-wavy {
+      text-decoration: wavy !important;
+    }
+    &-primay {
+      text-decoration-color: $brand-primary;
+    }
+  }
+  .fw-lg {
+    &-thin {
+      font-weight: 200 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-light {
+      font-weight: 300 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-normal {
+      font-weight: 400 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-medium {
+      font-weight: 500 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-semi-bold {
+      font-weight: 600 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-bold {
+      font-weight: 700 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-bolder {
+      font-weight: 800 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+    &-extra-bolder {
+      font-weight: 900 !important;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+  }
+}

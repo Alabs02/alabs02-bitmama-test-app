@@ -1,0 +1,262 @@
+$size: 100;
+@for $n from 0 through $size {
+  .fs-#{$n} {
+    font-size: toRem($n) !important;
+  }
+  .lh-#{$n} {
+    line-height: toRem($n) !important;
+  }
+  .round-#{$n} {
+    border-radius: toRem($n) !important;
+  }
+  .tracking-#{$n} {
+    letter-spacing: toRem($n) !important;
+  }
+  .w-#{$n} {
+    width: toRem($n) !important;
+  }
+  .h-#{$n} {
+    height: toRem($n) !important;
+  }
+  .gap {
+    &-#{$n} {
+      gap: toRem($n) !important;
+    }
+    &-x-#{$n} {
+      column-gap: toRem($n) !important;
+    }
+    &-y-#{$n} {
+      row-gap: toRem($n) !important;
+    }
+  }
+  .pd {
+    &-#{$n} {
+      padding: toRem($n) !important;
+    }
+    &t-#{$n} {
+      padding-top: toRem($n) !important;
+    }
+    &r-#{$n} {
+      padding-right: toRem($n) !important;
+    }
+    &l-#{$n} {
+      padding-left: toRem($n) !important;
+    }
+    &b-#{$n} {
+      padding-bottom: toRem($n) !important;
+    }
+    &x-#{$n} {
+      padding-left: toRem($n) !important;
+      padding-right: toRem($n) !important;
+    }
+    &y-#{$n} {
+      padding-top: toRem($n) !important;
+      padding-bottom: toRem($n) !important;
+    }
+  }
+  .mg {
+    &-#{$n} {
+      margin: toRem($n) !important;
+    }
+    &t-#{$n} {
+      margin-top: toRem($n) !important;
+    }
+    &r-#{$n} {
+      margin-right: toRem($n) !important;
+    }
+    &l-#{$n} {
+      margin-left: toRem($n) !important;
+    }
+    &b-#{$n} {
+      margin-bottom: toRem($n) !important;
+    }
+    &x-#{$n} {
+      margin-left: toRem($n) !important;
+      margin-right: toRem($n) !important;
+    }
+    &y-#{$n} {
+      margin-top: toRem($n) !important;
+      margin-bottom: toRem($n) !important;
+    }
+  }
+}
+
+@include breakpoint-up(md) {
+  .hide-md {
+    display: none !important;
+  }
+  .visible-md {
+    display: block !important;
+  }
+  @for $n from 0 through $size {
+    .fs-md-#{$n} {
+      font-size: toRem($n) !important;
+    }
+    .lh-md-#{$n} {
+      line-height: toRem($n) !important;
+    }
+    .round-md-#{$n} {
+      border-radius: toRem($n) !important;
+    }
+    .tracking-md-#{$n} {
+      letter-spacing: toRem($n) !important;
+    }
+    .w-md-#{$n} {
+      width: toRem($n) !important;
+    }
+    .h-md-#{$n} {
+      height: toRem($n) !important;
+    }
+    .gap {
+      &-md-#{$n} {
+        gap: toRem($n) !important;
+      }
+      &-x-md-#{$n} {
+        column-gap: toRem($n) !important;
+      }
+      &-y-md-#{$n} {
+        row-gap: toRem($n) !important;
+      }
+    }
+    .pd {
+      &-md-#{$n} {
+        padding: toRem($n) !important;
+      }
+      &t-md-#{$n} {
+        padding-top: toRem($n) !important;
+      }
+      &r-md-#{$n} {
+        padding-right: toRem($n) !important;
+      }
+      &l-md-#{$n} {
+        padding-left: toRem($n) !important;
+      }
+      &b-md-#{$n} {
+        padding-bottom: toRem($n) !important;
+      }
+      &x-md-#{$n} {
+        padding-left: toRem($n) !important;
+        padding-right: toRem($n) !important;
+      }
+      &y-md-#{$n} {
+        padding-top: toRem($n) !important;
+        padding-bottom: toRem($n) !important;
+      }
+    }
+    .mg {
+      &-md-#{$n} {
+        margin: toRem($n) !important;
+      }
+      &t-md-#{$n} {
+        margin-top: toRem($n) !important;
+      }
+      &r-md-#{$n} {
+        margin-right: toRem($n) !important;
+      }
+      &l-md-#{$n} {
+        margin-left: toRem($n) !important;
+      }
+      &b-md-#{$n} {
+        margin-bottom: toRem($n) !important;
+      }
+      &x-md-#{$n} {
+        margin-left: toRem($n) !important;
+        margin-right: toRem($n) !important;
+      }
+      &y-md-#{$n} {
+        margin-top: toRem($n) !important;
+        margin-bottom: toRem($n) !important;
+      }
+    }
+  }
+}
+
+@include breakpoint-up(lg) {
+  .hide-lg {
+    display: none !important;
+  }
+  .visible-lg {
+    display: block !important;
+  }
+  @for $n from 0 through $size {
+    .fs-lg-#{$n} {
+      font-size: toRem($n) !important;
+    }
+    .lh-lg-#{$n} {
+      line-height: toRem($n) !important;
+    }
+    .round-lg-#{$n} {
+      border-radius: toRem($n) !important;
+    }
+    .tracking-lg-#{$n} {
+      letter-spacing: toRem($n) !important;
+    }
+    .w-lg-#{$n} {
+      width: toRem($n) !important;
+    }
+    .h-lg-#{$n} {
+      height: toRem($n) !important;
+    }
+    .gap {
+      &-lg-#{$n} {
+        gap: toRem($n) !important;
+      }
+      &-x-lg-#{$n} {
+        column-gap: toRem($n) !important;
+      }
+      &-y-lg-#{$n} {
+        row-gap: toRem($n) !important;
+      }
+    }
+    .pd {
+      &-lg-#{$n} {
+        padding: toRem($n) !important;
+      }
+      &t-lg-#{$n} {
+        padding-top: toRem($n) !important;
+      }
+      &r-lg-#{$n} {
+        padding-right: toRem($n) !important;
+      }
+      &l-lg-#{$n} {
+        padding-left: toRem($n) !important;
+      }
+      &b-lg-#{$n} {
+        padding-bottom: toRem($n) !important;
+      }
+      &x-lg-#{$n} {
+        padding-left: toRem($n) !important;
+        padding-right: toRem($n) !important;
+      }
+      &y-lg-#{$n} {
+        padding-top: toRem($n) !important;
+        padding-bottom: toRem($n) !important;
+      }
+    }
+    .mg {
+      &-lg-#{$n} {
+        margin: toRem($n) !important;
+      }
+      &t-lg-#{$n} {
+        margin-top: toRem($n) !important;
+      }
+      &r-lg-#{$n} {
+        margin-right: toRem($n) !important;
+      }
+      &l-lg-#{$n} {
+        margin-left: toRem($n) !important;
+      }
+      &b-lg-#{$n} {
+        margin-bottom: toRem($n) !important;
+      }
+      &x-lg-#{$n} {
+        margin-left: toRem($n) !important;
+        margin-right: toRem($n) !important;
+      }
+      &y-lg-#{$n} {
+        margin-top: toRem($n) !important;
+        margin-bottom: toRem($n) !important;
+      }
+    }
+  }
+}

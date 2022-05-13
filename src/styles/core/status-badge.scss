@@ -1,0 +1,28 @@
+.status-badge {
+  padding: toRem(10) toRem(20);
+  border-radius: toRem(30);
+  @include flex-center-start();
+  &__copy {
+    font-weight: 500;
+    font-size: toRem(17);
+    @include subpixel-antialiased();
+  }
+  &-active {
+    background: lighten($color: $app-lime-green, $amount: 35%);
+    span {
+      color: darken($color: $app-lime-green, $amount: 40%);
+    }
+    .status-badge__icon {
+      color: darken($color: $app-lime-green, $amount: 15%);
+    }
+  }
+  &-idle {
+    background: lighten($color: $app-amber, $amount: 35%);
+    span {
+      color: darken($color: $app-amber, $amount: 40%);
+    }
+    .status-badge__icon {
+      color: darken($color: $app-amber, $amount: 15%);
+    }
+  }
+}

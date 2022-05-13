@@ -1,0 +1,44 @@
+.mail-panel {
+  @include flex-center-between();
+  width: 100%;
+  padding: toRem(10) toRem(20);
+  border-bottom-style: solid;
+  border-bottom-width: toRem(1);
+  background: lighten($color: $app-gray, $amount: 5%);
+  border-bottom-color: darken($color: $app-gray, $amount: 10%);
+  &:last-child {
+    border-bottom: transparent;
+  }
+  &:hover,
+  &:focus {
+    background: lighten($color: $brand-primary, $amount: 45%);
+    .mail-panel__content-icon {
+      color: $brand-primary;
+    }
+  }
+  &__content {
+    width: 85%;
+    @include flex-center-start();
+    &-title {
+      color: inherit;
+      @include subpixel-antialiased();
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      min-width: auto;
+      max-width: 85%;
+    }
+    &-icon {
+      color: darken($color: $app-gray, $amount: 15%);
+    }
+  }
+  &__actions {
+    width: 15%;
+    @include flex-center-start();
+    justify-content: flex-end;
+    &-time {
+      @include subpixel-antialiased();
+    }
+  }
+}

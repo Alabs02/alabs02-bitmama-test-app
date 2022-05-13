@@ -1,0 +1,98 @@
+.tool-bar {
+    background: $brand-white;
+    padding: toRem(10) toRem(20);
+    @include flex-center-between();
+    &__body {
+        min-width: 50%;
+        @include flex-center-between();
+    }
+    &__content {
+        @include flex-center-start();
+    }
+    &__media {
+        height: toRem(50);
+        width: toRem(50);
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__searchbar {
+        display: none;
+        width: 55%;
+        position: relative;
+        &-input {
+            width: 100%;
+            height: 100%;
+            color: darken($color: $app-gray, $amount: 60%);
+            background: $app-gray;
+            border-radius: toRem(30);
+            padding: toRem(20) toRem(40);
+            transition: all 0.35s ease-in-out;
+            &::placeholder {
+                color: darken($color: $app-gray, $amount: 30%);
+            }
+            &:hover,
+            &:focus {
+                background: darken($color: $app-gray, $amount: 5%);
+                .tool-bar__searchbar-icon {
+                    color: darken($color: $app-gray, $amount: 60%);
+                }
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: toRem(15);
+            transform: translateY(-50%);
+            color: darken($color: $app-gray, $amount: 30%);
+        }
+    }
+    &__actions {
+        @include flex-center-start();
+    }
+    &__avatar {
+        cursor: pointer;
+        height: toRem(50);
+        width: toRem(50);
+        border-radius: 50%;
+        position: relative;
+        // overflow: hidden;
+        background-color: $brand-primary-inverse;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-badge {
+            position: absolute;
+            bottom: toRem(1);
+            left: toRem(2.5);
+        }
+    }
+}
+
+@include breakpoint-up(md) {
+    .tool-bar {
+        padding: toRem(20) toRem(40);
+        &__media {
+            height: toRem(70);
+            width: toRem(70);
+        }
+        &__avatar {
+            height: toRem(70);
+            width: toRem(70);
+        }
+    }
+}
+
+@include breakpoint-up(lg) {
+    .tool-bar {
+        &__searchbar {
+            display: block;
+        }
+    }
+}

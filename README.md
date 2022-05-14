@@ -6,7 +6,7 @@ Create a `.env` file and copy the contents of `.env.example` in to the newly cre
 ## Available Scripts
 
 In the project directory, you can run:
-### `npm install -S --legacy-perr-deps`
+### `npm install -S --legacy-peer-deps`
 
 To install all development dependencies
 ### `npm start`

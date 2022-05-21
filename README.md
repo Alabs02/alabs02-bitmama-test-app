@@ -1,11 +1,12 @@
-# React Typescript Starter Kit
+# BITMAMA TEST
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Add .env File
+Create a `.env` file and copy the contents of `.env.example` in to the newly created env file
 
 ## Available Scripts
 
 In the project directory, you can run:
-### `npm install -S`
+### `npm install -S --legacy-peer-deps`
 
 To install all development dependencies
 ### `npm start`

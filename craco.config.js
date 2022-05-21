@@ -21,23 +21,10 @@ const throwError = (message) =>
         githubIssueQuery: 'webpack',
     });
 
-// APP DIRECTORY
-const appDirectory = fs.realpathSync(process.cwd());
-
-// GET ABSOLUTE PATH OF FILE WITHIN APP
-const resolveAppPath = (relativePath) =>
-    path.resolve(appDirectory, relativePath);
-
-// IS DEV CHECK
-// const isDev = process.env.NODE_ENV === 'development';
-
-// PERFORMANCE HINT
-// const performanceHint = isDev ? { hints: 'warning' } : {};
-
 module.exports = {
     webpack: {
         alias: {
-            '@': resolveAppPath('src'),
+            '@': path.resolve(__dirname, 'src'),
             '@layouts': path.resolve(__dirname, 'src/layouts'),
             '@services': path.resolve(__dirname, 'src/services'),
             '@utils': path.resolve(__dirname, 'src/utils'),
